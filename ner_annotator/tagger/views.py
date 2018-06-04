@@ -21,7 +21,7 @@ def post(request, *args, **kwargs):
         return utils.make_response(status=400,
             content=json.dumps({
                 'success': False,
-                'error': '%s' % repr(form.errors)
+                'error ': '%s' % repr(form.errors)
             }))
 
 @csrf_exempt
